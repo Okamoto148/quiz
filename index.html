@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>
+Quiz
+</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<style>
+.margem{
+margin: 50px;
+margin-left: 70px;
+}
+
+.linha{
+border: 3px solid black;
+border-radius: 10px;
+padding: 10px;
+background: white;
+}
+
+body{
+background-image: url("img/frutas.jpg");
+background-repeat: no-repeat;
+}
+</style>
+<body>
+<div class="margem">
+<h1 style="text-align: center">
+Quiz
+</h1>
+<div class="linha">
+<div class="mb-3">
+  <label for="formFile" class="form-label" style="font-size:25px">É verdade que ferver os alimentos os tornam seguros para o consumo?</label>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="1" id="verdadeiro">
+  <label class="form-check-label" for="flexCheckDefault" style="font-size:15px">
+    Verdadeiro
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="2" id="falso">
+  <label class="form-check-label" for="flexCheckDefault" style="font-size:15px">
+    Falso
+  </label>
+</div>
+<button type="button" class="btn btn-primary btn-sm" onclick="quiz()">Verificar</button>
+<div><br></div>
+<div id='resultado'></div>
+</div>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>
